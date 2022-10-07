@@ -41,7 +41,7 @@ export const Tabular = (props: any) => {
         <TableBody>
           {details && details.map((item: any, index: number) => (
             <>
-              <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
+              <TableRow key={item.food_details.product_name} sx={{ '& > *': { borderBottom: 'unset' } }}>
                 <TableCell component="th" scope="row" align='center'>
                   {item.food_details.category}
                 </TableCell>
